@@ -1,0 +1,5 @@
+compare/manipulate data in the apiroutes apirouter.post method.
+
+send the results back in the res.json().
+
+$.get in survey.html should display the results from res.json.

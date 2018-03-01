@@ -6,6 +6,9 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
 	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	  crossorigin="anonymous"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
 <div class="container">
@@ -17,19 +20,188 @@
 	<h4>Link to Photo</h4>
 	<input type="text" id="photo" class="form-control" required>
 	<hr>
+	<div class="input-field col s12">
 	<h3>
 		<strong>Question 1</strong>
 	</h3>
-	<h4>BLah blah blblablah.</h4>
-	<select>
+	<h4>Green is your favorite color.</h4>
+	<select id="q1">
 		<option value="1">1 (Strongly Disagree)</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
 		<option value="4">4</option>
 		<option value="5">5 (Strongly Agree)</option>
 	</select>
+	</div>
 
+	<hr>
+	<h3>
+		<strong>Question 2</strong>
+	</h3>
+	<h4>You prefer dogs to cats.</h4>
+	<select id="q2">
+		<option value="1">1 (Strongly Disagree)</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5 (Strongly Agree)</option>
+	</select>
+	<hr>
+	<h3>
+		<strong>Question 3</strong>
+	</h3>
+	<h4>You love smelly cheese.</h4>
+	<select id="q3">
+		<option value="1">1 (Strongly Disagree)</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5 (Strongly Agree)</option>
+	</select>
+	<hr>
+	<h3>
+		<strong>Question 4</strong>
+	</h3>
+	<h4>Red wine is better than white wine.</h4>
+	<select id="q4">
+		<option value="1">1 (Strongly Disagree)</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5 (Strongly Agree)</option>
+	</select>
+	<hr>
+	<h3>
+		<strong>Question 5</strong>
+	</h3>
+	<h4>You think Donald Trump is a disgusting individual.</h4>
+	<select id="q5">
+		<option value="1">1 (Strongly Disagree)</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5 (Strongly Agree)</option>
+	</select>
+	<hr>
+	<h3>
+		<strong>Question 6</strong>
+	</h3>
+	<h4>You enjoy drinking coffee.</h4>
+	<select id="q6">
+		<option value="1">1 (Strongly Disagree)</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5 (Strongly Agree)</option>
+	</select>
+	<hr>
+	<h3>
+		<strong>Question 7</strong>
+	</h3>
+	<h4>You have never farted in front of a signficant other.</h4>
+	<select id="q7">
+		<option value="1">1 (Strongly Disagree)</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5 (Strongly Agree)</option>
+	</select>
+	<hr>
+	<h3>
+		<strong>Question 8</strong>
+	</h3>
+	<h4>You like to cook.</h4>
+	<select id="q8">
+		<option value="1">1 (Strongly Disagree)</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5 (Strongly Agree)</option>
+	</select>
+	<hr>
+	<h3>
+		<strong>Question 9</strong>
+	</h3>
+	<h4>You are a pessimist.</h4>
+	<select id="q9">
+		<option value="1">1 (Strongly Disagree)</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5 (Strongly Agree)</option>
+	</select>
+	<hr>
+	<h3>
+		<strong>Question 10</strong>
+	</h3>
+	<h4>Cats are evil and gross.</h4>
+	<select id="q10">
+		<option value="1">1 (Strongly Disagree)</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5 (Strongly Agree)</option>
+	</select>
+	<br>
+	<br>
 
+	<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit
+		
+	</button>
 </div>
 </body>
 </html>
+
+<script type="text/javascript">
+
+
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+
+      // Here we grab the form elements
+      var newFriend = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: [
+        $("#q1").val().trim(),
+        $("#q2").val().trim(),
+        $("#q3").val().trim(),
+        $("#q4").val().trim(),
+        $("#q5").val().trim(),
+        $("#q6").val().trim(),
+        $("#q7").val().trim(),
+        $("#q8").val().trim(),
+        $("#q9").val().trim(),
+        $("#q10").val().trim(),
+        ]         
+      };
+      
+      console.log("New Friend Object", newFriend);
+
+      // This line is the magic. It"s very similar to the standard ajax function we used.
+      // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+      // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+      // depending on if a tables is available or not.
+
+      // $.post("/api/friends", newFriend, function(data) {
+      // 	console.log("Thanks for submitting your information.");
+      // 	console.log("Added info:" + data);
+      //     // Clear the form when submitting
+
+
+      //   });
+      //data parameter corresponds to res in the apiroutes post();
+      $.post("/api/friends", newFriend).then(function(data){
+      	console.log("Info Posted:", data);
+      	//nothing needs to come back for this unless you want to 
+      });
+
+      $.get("/api/friends", function(data){
+		console.log("Data:", data);
+		//go thru data and display
+	    });
+    });
+
+
+
+</script>

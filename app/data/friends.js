@@ -14,6 +14,38 @@ var friends= [
 			4,
 			4
 		]
+	},
+	{
+		name: "Alycia",
+		photo: "placholderAlycia.jpg",
+		scores: [
+			3,
+			4,
+			2,
+			3,
+			3,
+			5,
+			5,
+			1,
+			5,
+			1
+		]
+	},
+	{
+		name: "Michael",
+		photo: "placeholderMichael.jpg",
+		scores: [
+			3,
+			4,
+			4,
+			4,
+			1,
+			2,
+			4,
+			2,
+			3,
+			5
+		]
 	}
 ];
 

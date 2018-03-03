@@ -42,6 +42,7 @@ apiRouter.post("/friends", function(req, res){
 		}
 		console.log("Match:", match);
 	}
+	friends.push(newFriend);
 	res.json(match);
 
 });

@@ -46,6 +46,38 @@ var friends= [
 			3,
 			5
 		]
+	},
+	{
+		name: "Jason",
+		photo: "https://www.stockvault.net/data/2009/10/30/111422/preview16.jpg",
+		scores: [
+			3,
+			2,
+			2,
+			1,
+			3,
+			1,
+			4,
+			1,
+			1,
+			1
+		]
+	},
+	{
+		name: "Wanda",
+		photo: "https://thumb1.shutterstock.com/display_pic_with_logo/160669/384995470/stock-photo-smiling-happy-woman-384995470.jpg",
+		scores: [
+			5,
+			5,
+			5,
+			5,
+			4,
+			4,
+			5,
+			1,
+			1,
+			1
+		]
 	}
 ];
 

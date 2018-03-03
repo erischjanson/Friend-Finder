@@ -154,15 +154,7 @@
 
 	<!-- modal/put in results here -->
 
-<!-- 	<div class="results">
-		<div class="row">
-			<div class="col-md-12">
-				<h1>Your match</h1>
-				<h3 id="matchName">Name:</h3>
-				<p id="matchPhoto">Photo: </p>
-			</div>
-		</div>
-	</div> -->
+
 </div>
 
 <!-- Button trigger modal -->
@@ -182,6 +174,7 @@
       </div>
       <div class="modal-body">
       	<h2 id="matchName"></h2>
+      	<p id="matchfriendDifference"></p>
       	<img id="matchPhoto" src="" alt="photo of your match">
         ...
       </div>
@@ -215,18 +208,6 @@ $.ajaxSettings.traditional = true;
       
       console.log("New Friend Object", newFriend);
 
-      // This line is the magic. It"s very similar to the standard ajax function we used.
-      // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-      // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-      // depending on if a tables is available or not.
-
-      // $.post("/api/friends", newFriend, function(data) {
-      // 	console.log("Thanks for submitting your information.");
-      // 	console.log("Added info:" + data);
-      //     // Clear the form when submitting
-
-
-      //   });
       //data parameter corresponds to res in the apiroutes post();
 
 
@@ -235,27 +216,13 @@ $.ajaxSettings.traditional = true;
       	console.log("Info Posted:", data);
       	console.log(data.name);
       	$("#matchName").text(data.name);
+      	$("#matchfriendDifference").text("Match closeness: " + data.friendDifference)
       	$("#matchPhoto").attr("src", data.photo);
 
       	$("#resultsModal").modal("toggle");
 
+      });    
 
-      	// for (var i = 0; i < data.length; i++){
-      	// 	// console.log(data[i].name);
-      	// 	// console.log(data[i].photo);
-      	// 	var matchName = data[0].name;
-      	// 	var matchPhot = data[0].photo;
-      	// 	$("#matchName").text(matchName);
-      	// }
-
-      	//nothing needs to come back for this unless you want to 
-      });
-
-      
-  //     $.get("/api/friends", function(data){
-		// console.log("Data:", data);
-		// //go thru data and display
-	 //    });
     });
 
 

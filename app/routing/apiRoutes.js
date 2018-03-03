@@ -5,18 +5,9 @@ var express = require("express");
 var apiRouter = express.Router();
 //get route to display the JSON data of all possible friends
 apiRouter.get("/friends", function(req, res){
-	res.json(friends);
-	console.log("testing");
+	res.json(friends);	
 });
-//post route to handle incoming surevey results and to handle compatibility logic
-// apiRouter.post("/friends", function(req, res){
-// 	console.log("Request body/name: ", req.body.name);
-// 	var newFriend = req.body;
-// 	friends.push(newFriend);
-// 	console.log("New Friend: ", newFriend);
-// 	console.log("ApiRoutes");
-// 	res.json(friends);//"compared/matched data goes here:" ,
-// });
+
 //this route is resonsible for taking the new user data and comparing to existing users data
 apiRouter.post("/friends", function(req, res){
 	var newFriend = req.body;
@@ -33,15 +24,7 @@ apiRouter.post("/friends", function(req, res){
 	};
 
 	var totalDifference = 0;
-
 	var scoresDifferences = [];
-
-	// var match = 0;
-	// var matchName = "";
-	// var matchPhoto = "";
-	//var totalDifference  = 10000;
-
-	//go through all the existing friends in the friends array
 
 	for(var i = 0; i < friends.length; i++){
 		console.log("friend: " + JSON.stringify(friends[i]));
@@ -57,13 +40,7 @@ apiRouter.post("/friends", function(req, res){
 			match.photo = friends[i].photo;
 			match.friendDifference = totalDifference;
 		}
-
 		console.log("Match:", match);
-		console.log(match.name);
-		console.log(match.photo);
-		// res.json(match);
-		// scoresDifferences.push(difference);
-		// console.log(scoresDifferences);		
 	}
 	res.json(match);
 

@@ -233,22 +233,22 @@ $.ajaxSettings.traditional = true;
       $.post("/api/friends", newFriend)
       .then(function(data){
       	console.log("Info Posted:", data);
-      	for (var i = 0; i < data.length; i++){
-      		// console.log(data[i].name);
-      		// console.log(data[i].photo);
-      		var matchName = data[0].name;
-      		var matchPhot = data[0].photo;
-      		$("#matchName").text(matchName);
-      	}
+      	// for (var i = 0; i < data.length; i++){
+      	// 	// console.log(data[i].name);
+      	// 	// console.log(data[i].photo);
+      	// 	var matchName = data[0].name;
+      	// 	var matchPhot = data[0].photo;
+      	// 	$("#matchName").text(matchName);
+      	// }
 
       	//nothing needs to come back for this unless you want to 
       });
 
       
-      $.get("/api/friends", function(data){
-		console.log("Data:", data);
-		//go thru data and display
-	    });
+  //     $.get("/api/friends", function(data){
+		// console.log("Data:", data);
+		// //go thru data and display
+	 //    });
     });
 
 

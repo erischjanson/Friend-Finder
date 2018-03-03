@@ -29,7 +29,7 @@ apiRouter.post("/friends", function(req, res){
 	var match = {
 		name: "",
 		photo:"",
-		friendDifference: 11
+		friendDifference: 1000
 	};
 
 	var totalDifference = 0;
@@ -52,12 +52,20 @@ apiRouter.post("/friends", function(req, res){
 			totalDifference += Math.abs(parseInt(newFriendScores[j])-parseInt(friends[i].scores[j]));
 		}
 		console.log("totalDifference: " + totalDifference);
+		if(totalDifference <= match.friendDifference){
+			match.name = friends[i].name;
+			match.photo = friends[i].photo;
+			match.friendDifference = totalDifference;
+		}
+
+		console.log("Match:", match);
+		// res.json(match);
 		// scoresDifferences.push(difference);
 		// console.log(scoresDifferences);		
 	}
+	res.json(match);
 
-
-})
+});
 
 
 module.exports = apiRouter;

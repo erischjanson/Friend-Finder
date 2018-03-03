@@ -166,12 +166,12 @@
 </div>
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Launch demo modal
 </button>
-
+ -->
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -235,12 +235,11 @@ $.ajaxSettings.traditional = true;
       	console.log("Info Posted:", data);
       	console.log(data.name);
       	$("#matchName").text(data.name);
+      	$("#matchPhoto").attr("src", data.photo);
 
-      	for(var i = 0; i < data.length; i++){
-      		$("#matchName").text(data.name);
-      		console.log(data.name);
+      	$("#resultsModal").modal("toggle");
 
-      	}
+
       	// for (var i = 0; i < data.length; i++){
       	// 	// console.log(data[i].name);
       	// 	// console.log(data[i].photo);

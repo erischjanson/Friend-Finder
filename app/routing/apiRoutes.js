@@ -59,6 +59,8 @@ apiRouter.post("/friends", function(req, res){
 		}
 
 		console.log("Match:", match);
+		console.log(match.name);
+		console.log(match.photo);
 		// res.json(match);
 		// scoresDifferences.push(difference);
 		// console.log(scoresDifferences);		

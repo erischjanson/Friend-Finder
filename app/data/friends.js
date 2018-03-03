@@ -1,7 +1,7 @@
 var friends= [
 	{
 		name: "Elizabeth",
-		photo: "placeholder.jpg",
+		photo: "https://thumb1.shutterstock.com/display_pic_with_logo/698308/658592416/stock-photo-big-bright-white-smile-headshot-with-a-beautiful-brunette-woman-sincere-happy-cheerful-positive-658592416.jpg",
 		scores: [
 			5,
 			2,
@@ -17,7 +17,7 @@ var friends= [
 	},
 	{
 		name: "Alycia",
-		photo: "placholderAlycia.jpg",
+		photo: "https://thumb1.shutterstock.com/display_pic_with_logo/3394091/377261680/stock-photo-closeup-red-head-young-woman-pretty-pinup-girl-green-button-shirt-giving-thumbs-up-sign-gesture-377261680.jpg",
 		scores: [
 			3,
 			4,
@@ -33,7 +33,7 @@ var friends= [
 	},
 	{
 		name: "Michael",
-		photo: "placeholderMichael.jpg",
+		photo: "https://thumb1.shutterstock.com/display_pic_with_logo/1849259/706363516/stock-photo-surfer-dude-in-wetsuit-gesturing-on-board-portrait-706363516.jpg",
 		scores: [
 			3,
 			4,

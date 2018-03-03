@@ -233,6 +233,14 @@ $.ajaxSettings.traditional = true;
       $.post("/api/friends", newFriend)
       .then(function(data){
       	console.log("Info Posted:", data);
+      	console.log(data.name);
+      	$("#matchName").text(data.name);
+
+      	for(var i = 0; i < data.length; i++){
+      		$("#matchName").text(data.name);
+      		console.log(data.name);
+
+      	}
       	// for (var i = 0; i < data.length; i++){
       	// 	// console.log(data[i].name);
       	// 	// console.log(data[i].photo);

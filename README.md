@@ -1,11 +1,11 @@
 # Friend-Finder
 Node and Express Servers
 
-Description:
+## Description:
 
 Friend Finder is essentially a "platonic dating app". Users respond to a series of questions and are matched up based upon the similarity of their responses to these questions.
 
-Instructions:
+# Instructions:
 ```
 git clone git@github.com:erischjanson/Friend-Finder.git
 cd Friend-Finder

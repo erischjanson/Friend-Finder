@@ -6,12 +6,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!-- jquery link -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	  crossorigin="anonymous"></script>
-	  <!-- bootstrap js link -->
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<!-- bootstrap js link -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
@@ -36,7 +34,6 @@
 		<option value="5">5 (Strongly Agree)</option>
 	</select>
 	</div>
-
 	<hr>
 	<h3>
 		<strong>Question 2</strong>
@@ -151,17 +148,9 @@
 	<br>
 	<br>
 
-
 	<!-- modal/put in results here -->
-
-
 </div>
 
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
- -->
 <!-- Modal -->
 <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -183,7 +172,6 @@
 </div>
 <script type="text/javascript">
 $.ajaxSettings.traditional = true;
-
 
     $("#submit").on("click", function(event) {
       event.preventDefault();
@@ -210,7 +198,6 @@ $.ajaxSettings.traditional = true;
 
       //data parameter corresponds to res in the apiroutes post();
 
-
       $.post("/api/friends", newFriend)
       .then(function(data){
       	console.log("Info Posted:", data);
@@ -220,12 +207,8 @@ $.ajaxSettings.traditional = true;
       	$("#matchPhoto").attr("src", data.photo);
 
       	$("#resultsModal").modal("toggle");
-
       });    
-
     });
-
-
 </script>
 </body>
 </html>

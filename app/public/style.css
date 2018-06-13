@@ -1,3 +1,29 @@
-body {
+/* body {
     background: red;
+} */
+
+/* .modal-body {
+    background: red;
+} */
+
+/* .modal-title {
+    text-align: center;
+    margin: 0 auto;
+} */
+
+h5 {
+    text-align: center !important;
 }
+
+#matchPhoto {
+height: 100%;
+width: 100%;
+}
+
+#matchName {
+    text-align: center;
+}
+
+/* #matchfriendDifference {
+    text-align: center;
+} */

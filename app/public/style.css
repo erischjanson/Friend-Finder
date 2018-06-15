@@ -1,6 +1,13 @@
-/* body {
-    background: red;
-} */
+body {
+    font-family: 'Dancing Script', cursive !important;
+    text-align: center;
+}
+
+.jumbotron {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
 
 /* .modal-body {
     background: red;
@@ -10,7 +17,13 @@
     text-align: center;
     margin: 0 auto;
 } */
+/* h1 {
+    font-family: 'Dancing Script', cursive !important;
+}
 
+h2 {
+    font-family: 'Dancing Script', cursive !important;
+} */
 h5 {
     text-align: center !important;
 }

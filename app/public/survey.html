@@ -2,9 +2,15 @@
 <html>
 <head>
 	<title>Friend Finder Survey</title>
+	<!--Reset CSS Link-->
+	<link rel = "stylesheet" href="/reset.css"
 	<!-- bootstrap css link -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<!--Custom CSS link-->
 	<link rel="stylesheet" href="/style.css">
+	<!--google fonts link-->
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 	<!-- jquery link -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -15,146 +21,243 @@
 <body>
 <div class="container">
 	<div class="row">
-	<h2><strong>SURVEY QUESTIONS</strong></h2>
-	</div>
-	
+		<div class="col-md-12">
+			<h2><strong>SURVEY QUESTIONS</strong></h2>
+		</div>
+	</div>	
 	<hr>
 	
 	<div class="row">
-			
-	<h3>About You</h3>
+		<div class="col-md-12">			
+			<h3>About You</h3>
+		</div>
 	</div>
 	<div class="row">
-	<h4>Name</h4>
-	<input type="text" id="name" class="form-control" required>
-	<h4>Link to Photo</h4>
-	<input type="text" id="photo" class="form-control" required>
+		<div class="col-md-12">
+			<h4>Name</h4>
+			<input type="text" id="name" class="form-control" required>
+		</div>
+		<div class="col-md-12">
+			<h4>Link to Photo</h4>
+			<input type="text" id="photo" class="form-control" required>
+		</div>
 	</div>
 	<hr>
 	<div class="input-field">
-	<h3>
-		<strong>Question 1</strong>
-	</h3>
-	<h4>Green is your favorite color.</h4>
-	<select id="q1">
-		<option value="1">1 (Strongly Disagree)</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5 (Strongly Agree)</option>
-	</select>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>
+					<strong>Question 1</strong>
+				</h3>
+			</div>
+			<div class="col-md-12">
+				<h4>Green is your favorite color.</h4>
+			</div>
+			<div class="col-md-12">
+				<select id="q1">
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+		</div>
 	
 	<hr>
-	<h3>
-		<strong>Question 2</strong>
-	</h3>
-	<h4>You prefer dogs to cats.</h4>
-	<select id="q2">
-		<option value="1">1 (Strongly Disagree)</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5 (Strongly Agree)</option>
-	</select>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>
+					<strong>Question 2</strong>
+				</h3>
+			</div>
+			<div class="col-md-12">
+				<h4>You prefer dogs to cats.</h4>
+			</div>
+			<div class="col-md-12">
+				<select id="q2">
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+		</div>	
 	<hr>
-	<h3>
-		<strong>Question 3</strong>
-	</h3>
-	<h4>You love smelly cheese.</h4>
-	<select id="q3">
-		<option value="1">1 (Strongly Disagree)</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5 (Strongly Agree)</option>
-	</select>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>
+					<strong>Question 3</strong>
+				</h3>
+			</div>
+			<div class="col-md-12">
+				<h4>You love smelly cheese.</h4>
+			</div>
+			<div class="col-md-12">
+				<select id="q3">
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+		</div>
 	<hr>
-	<h3>
-		<strong>Question 4</strong>
-	</h3>
-	<h4>Red wine is better than white wine.</h4>
-	<select id="q4">
-		<option value="1">1 (Strongly Disagree)</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5 (Strongly Agree)</option>
-	</select>
+		<div class="row">
+			<div class="col-md-12">	
+				<h3>
+					<strong>Question 4</strong>
+				</h3>
+			</div>
+			<div class="col-md-12">
+				<h4>Red wine is better than white wine.</h4>
+			</div>
+			<div class="col-md-12">
+				<select id="q4">
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+		</div>
 	<hr>
-	<h3>
-		<strong>Question 5</strong>
-	</h3>
-	<h4>You think Donald Trump is a disgusting individual.</h4>
-	<select id="q5">
-		<option value="1">1 (Strongly Disagree)</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5 (Strongly Agree)</option>
-	</select>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>
+					<strong>Question 5</strong>
+				</h3>
+			</div>
+			<div class="col-md-12">
+				<h4>You think Donald Trump is a disgusting individual.</h4>
+			</div>
+			<div class="col-md-12">
+				<select id="q5">
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+		</div>
 	<hr>
-	<h3>
-		<strong>Question 6</strong>
-	</h3>
-	<h4>You enjoy drinking coffee.</h4>
-	<select id="q6">
-		<option value="1">1 (Strongly Disagree)</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5 (Strongly Agree)</option>
-	</select>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<h3>
+					<strong>Question 6</strong>
+				</h3>
+			</div>
+			<div class="col-md-12">
+				<h4>You enjoy drinking coffee.</h4>
+			</div>
+			<div class="col-md-12">
+				<select id="q6">
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+		</div>
 	<hr>
-	<h3>
-		<strong>Question 7</strong>
-	</h3>
-	<h4>You have never farted in front of a signficant other.</h4>
-	<select id="q7">
-		<option value="1">1 (Strongly Disagree)</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5 (Strongly Agree)</option>
-	</select>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>
+					<strong>Question 7</strong>
+				</h3>
+			</div>
+			<div class="col-md-12">
+				<h4>You have never farted in front of a signficant other.</h4>
+			</div>
+			<div class="col-md-12">
+				<select id="q7">
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+		</div>
 	<hr>
-	<h3>
-		<strong>Question 8</strong>
-	</h3>
-	<h4>You like to cook.</h4>
-	<select id="q8">
-		<option value="1">1 (Strongly Disagree)</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5 (Strongly Agree)</option>
-	</select>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>
+					<strong>Question 8</strong>
+				</h3>
+			</div>
+			<div class="col-md-12">
+				<h4>You like to cook.</h4>
+			</div>
+			<div class="col-md-12">
+				<select id="q8">
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+		</div>
 	<hr>
-	<h3>
-		<strong>Question 9</strong>
-	</h3>
-	<h4>You are a pessimist.</h4>
-	<select id="q9">
-		<option value="1">1 (Strongly Disagree)</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5 (Strongly Agree)</option>
-	</select>
+		<div class="row">
+			<div class="col-md-12">		
+				<h3>
+					<strong>Question 9</strong>
+				</h3>
+			</div>
+			<div class="col-md-12">
+				<h4>You are a pessimist.</h4>
+			</div>
+			<div class="col-md-12">
+				<select id="q9">
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+		</div>
 	<hr>
-	<h3>
-		<strong>Question 10</strong>
-	</h3>
-	<h4>Cats are evil and gross.</h4>
-	<select id="q10">
-		<option value="1">1 (Strongly Disagree)</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5 (Strongly Agree)</option>
-	</select>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>
+					<strong>Question 10</strong>
+				</h3>
+			</div>
+			<div class="col-md-12">
+				<h4>Cats are evil and gross.</h4>
+			</div>
+			<div class="col-md-12">
+				<select id="q10">
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+		</div>
 	<br>
 	<br>
+	<div class="row">
+		<!-- <div class="col-md-3">
+
+		</div> -->
+		<div class="col-md-12">
 	<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+		</div>
+		<!-- <div class="col-md-3"></div> -->
+	</div>
 	<br>
 	<br>
 	</div>

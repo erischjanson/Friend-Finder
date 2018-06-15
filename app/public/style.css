@@ -1,12 +1,17 @@
 body {
     font-family: 'Dancing Script', cursive !important;
     text-align: center;
+    background-color:#95A78D
 }
 
 .jumbotron {
     padding-top: 32px;
     padding-bottom: 32px;
 
+}
+
+h2 {
+    margin-top: 8px;
 }
 
 /* .modal-body {
@@ -24,6 +29,10 @@ body {
 h2 {
     font-family: 'Dancing Script', cursive !important;
 } */
+
+h3 {
+    font-weight: bold;
+}
 h5 {
     text-align: center !important;
 }
@@ -52,3 +61,18 @@ width: 100%;
 /* .custom {
     width: 50%;
 } */
+
+.lead {
+    margin-top: 16px;
+}
+
+.custom-button {
+   background-color: #14AA49 !important;
+   border-color: #14AA49 !important;
+}
+
+#submit {
+    background-color: #14AA49;
+    border-color: #14AA49;
+ }
+ 

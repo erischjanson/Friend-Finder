@@ -45,31 +45,33 @@ select {
  }
 
 /*------------------------------modal------------------------------*/
-/* modal */
-/* .modal-body {
-    background: red;
+
+ #matchPhoto {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    border: 5px solid black;    
+    }
+
+.modal-content {
+    background-color: #95A78D;
+    border: 2px solid black;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+/* #matchName {
+    text-align: center;
 } */
 
-/* .modal-title {
-    text-align: center;
-    margin: 0 auto;
-} */
-/* h1 {
-    font-family: 'Dancing Script', cursive !important;
-}
 
 
 
 
 
-#matchPhoto {
-height: 100%;
-width: 100%;
-}
 
-#matchName {
-    text-align: center;
-}
 
 
 

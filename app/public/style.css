@@ -1,19 +1,51 @@
+/*------------------------------general------------------------------*/
+
 body {
     font-family: 'Dancing Script', cursive !important;
     text-align: center;
     background-color:#95A78D
 }
 
+h2 {
+    margin-top: 8px;
+}
+
+/*------------------------------home------------------------------*/
+
+
+.lead {
+    margin-top: 16px;
+}
+
+.custom-button {
+    background-color: #14AA49 !important;
+    border-color: #14AA49 !important;
+ }
+
+/*------------------------------survey------------------------------*/
+
+
 .jumbotron {
     padding-top: 32px;
     padding-bottom: 32px;
 
 }
+.form-control {
 
-h2 {
-    margin-top: 8px;
+    border: 2px solid black;
+}
+ 
+select {
+    border-color: black;
 }
 
+#submit {
+    background-color: #14AA49;
+    border-color: #14AA49;
+ }
+
+/*------------------------------modal------------------------------*/
+/* modal */
 /* .modal-body {
     background: red;
 } */
@@ -26,16 +58,9 @@ h2 {
     font-family: 'Dancing Script', cursive !important;
 }
 
-h2 {
-    font-family: 'Dancing Script', cursive !important;
-} */
 
-h3 {
-    font-weight: bold;
-}
-h5 {
-    text-align: center !important;
-}
+
+
 
 #matchPhoto {
 height: 100%;
@@ -46,33 +71,19 @@ width: 100%;
     text-align: center;
 }
 
-/* .col-md-3 {
-    border: 2px solid black;
+
+
+
+
+
+
+
+
+
+
+
+
+
+#blah {
+    color: white;
 }
-
-.row {
-    border: 5px solid red;
-} */
-
-/* #matchfriendDifference {
-    text-align: center;
-} */
-
-/* .custom {
-    width: 50%;
-} */
-
-.lead {
-    margin-top: 16px;
-}
-
-.custom-button {
-   background-color: #14AA49 !important;
-   border-color: #14AA49 !important;
-}
-
-#submit {
-    background-color: #14AA49;
-    border-color: #14AA49;
- }
- 
